@@ -19,7 +19,22 @@ const Products = () => {
   }, []);
 
   if (loading) {
-    return <h1 className="text-center text-2xl leading-[200px]">Loading...</h1>;
+    return (
+      <div
+        className="flex justify-center items-center"
+        style={{ height: `calc(100vh - 120px)` }}
+      >
+        <video
+          autoPlay
+          loop
+          muted
+          className="m-auto w-[300px]  rounded-lg overflow-hidden"
+        >
+          <source src="/LoadinGif.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    );
   }
 
   return (
