@@ -6,6 +6,7 @@ const ROUTES = [
   { name: "About", path: "/about" },
   { name: "Company", path: "/about/company" },
   { name: "Products", path: "/products" },
+  {name: "Posts" , path: "/Posts"}
 ];
 
 const MainLayout = ({ children }) => {

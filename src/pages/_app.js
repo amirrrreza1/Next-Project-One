@@ -6,7 +6,8 @@ import { useRouter } from "next/router";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
-  const specialRoutes = ["/products" , `/products/[id]`];
+  const specialRoutes = ["/products" , `/products/[id]` , "/products/[...id]"];
+  
 
   const Layout = specialRoutes.includes(router.pathname)
     ? SpecialLayout

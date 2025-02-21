@@ -69,6 +69,9 @@ const Products = () => {
       </ul>
     </div>
   );
+
+
+  
 };
 
 export default Products;
